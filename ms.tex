@@ -41,20 +41,21 @@
 
 \section{Introduction}\label{sec-intro}
 
-[Note to self: Cite one canonical person but also more junior people in the field.]
-
+%[Note to self: Cite one canonical person but also more junior people in the field.]
 
 %\citep[for example; ][at the end of the line]{Bellovary2010,Tremmel2015,Fu2008}
  %\S\ref{sec-intro}
 
-Supermassive black holes (SMBHs) are thought to exist in almost all massive galaxies. \citep{Kormendy2013} In the canonical picture of BH growth, these black holes may become active galactic nuclei (AGN) during periods of high accretion and wane in periods of quiescence. \citep{Volonteri2012,Alexander2005,Papovich2006} The host galaxy's size, star formation rate, and other environmental effects may help to influence the growth of the black hole residing at its center; however, there are still uncertainties concerning the relationship between these SMBHs and their much larger host galaxies, as well as how they grow and evolve together. \citep[5-8 citations here]{Haehnelt2000,DiMatteo2005,Fu2008,Hopkins2006,Sijacki2009,Silverman2009,Mullaney2012}
+Supermassive black holes (SMBHs) are thought to exist in almost all massive galaxies. \citep{Kormendy2013} In the canonical picture of BH growth, these black holes may become active galactic nuclei (AGN) during periods of high accretion and wane in periods of quiescence. \citep{Alexander2005,Papovich2006,Volonteri2012} The host galaxy's size, star formation rate, and other environmental effects may help to influence the growth of the black hole residing at its center; however, there are still uncertainties concerning the relationship between these SMBHs and their much larger host galaxies, as well as how they grow and evolve together. \citep[5-8 citations here]{Haehnelt2000,DiMatteo2005,Hopkins2006,Fu2008,Sijacki2009,Silverman2009,Mullaney2012}
 
 The M$-\sigma$ relation, which relates the SMBH's mass and the velocity dispersion of the host galaxy's central stellar population, gives some insight into the complex interplay between these objects. \citep{Ferrarese2000} A prominent trend appears, as SMBHs tend to scale with the velocity dispersion of the host galaxy bulge. % For my thesis: A prominent trend appears as SMBHs tend to scale with the spheroidal center of their host galaxies; i.e. less massive SMBH reside in galaxies with less disperse bulges, and more massive SMBH live in galaxies with larger velocity dispersions in their bulges. 
-The tightness of the relation is significant and can be seen over several orders of magnitudes in velocity dispersion and black hole mass. \citep{Mcconnell2013,Kormendy2013,Merritt2001,Graham2011} Scatter exists among the low mass galaxies and a deviation may appear at the high mass end, where overmassive BHs may reside. \citep{Moster2010,Natarajan2011,VanDenBosch2007} However, scatter in less massive galaxies may imply that there are several channels of black hole growth at play in the low mass end of the relation. \citep{Micic2007,Volonteri2009,Reines2013,Graham2014} One standard explanation for the M$-\sigma$ relation lies in galaxy mergers, which build up galaxies, feed SMBHs, and assemble bulges. \citep{DiMatteo2005,} These large, active mergers are thought to create feedback from the SMBH which affects the structure of the galaxy. In addition to the M$-\sigma$, other relations between the SMBH and its host have been well studied, making it clear that, though these objects have many orders of magnitude between their sizes, a complex interplay still exists.
+The tightness of the relation is significant and can be seen over several orders of magnitudes in velocity dispersion and black hole mass. \citep{Merritt2001,Graham2011,Mcconnell2013,Kormendy2013} Scatter exists among the low mass galaxies and a deviation may appear at the high mass end, where overmassive BHs may reside. \citep{VanDenBosch2007,Moster2010,Natarajan2011} However, scatter in less massive galaxies may imply that there are several channels of black hole growth at play in the low mass end of the relation. \citep{Micic2007,Volonteri2009,Reines2013,Graham2014} One standard explanation for the M$-\sigma$ relation lies in galaxy mergers, which build up galaxies, feed SMBHs, and assemble bulges. \citep{DiMatteo2005,Shen2008} Major mergers are thought to supply gas to the central SMBH resutling in feedback which quenches star formation and affects the structure of the galaxy. 
+
+% Kelly cut: In addition to the M$-\sigma$, other relations between the SMBH and its host have been well studied, making it clear that, though these objects have many orders of magnitude between their sizes, a complex interplay still exists.
 
 %[CITE FOR THEORY: Springel and Dimatteo; cite when we discuss why m-sigma happens]
 %McConnell and Ma have the prettiest M-sigma relation, but there are two camps: Kormendy and Ferrarese & Merritt who must both be cited.
-%Check with Kelly: Which Vanden, Bosch, Emsellem, and Prija papers she would recommend.
+%Check with Kelly: Which Van den Bosch, Emsellem, and Prija papers she would recommend.
 
 % For thesis: M-sigma plot:
 %\begin{figure}
@@ -69,22 +70,23 @@ The tightness of the relation is significant and can be seen over several orders
 
 % FOR SHOCKS: The simulations I am studying are run with a new implementation of Gasoline, which models hydrodynamic processes like shocks very well by using a geometric density average in the SPH force expression
 
-The M$_{\rm BH}$-bulge luminosity relation was first implied by the work of \cite{Dressler1988}. \cite{Dressler1989} first proposed the correlation and it was first illustrated by \cite{Kormendy1993}. The M$_{\rm BH}$-bulge mass relation followed and was determined via ground based observations by \cite{Magorrian1998} and was around M$_{\rm BH}$ $\sim$0.005 M$_{\rm bulge}$; however, this relation was characterized by a lot of scatter and its reliability waned due to selection biases.  Follow up examinations by others using HST observations constrained the M$_{\rm BH}$/M$_{\rm bulge}$ fraction to between about 0.0013 and 0.0023 \citep{Merritt2001a,McLure2001,Marconi2003}. 
+The black hole mass-bulge luminosity relation was first implied by the work of \cite{Dressler1988}. \cite{Dressler1989} first proposed the correlation and it was first illustrated by \cite{Kormendy1993}. 
+%The M$_{\rm BH}$-bulge mass relation followed and was determined via ground based observations by \cite{Magorrian1998} and was around M$_{\rm BH}$ $\sim$0.005 M$_{\rm bulge}$; however, this relation was characterized by a lot of scatter and its reliability waned due to selection biases.  
+A wealth of evidence continues to relate these two characteristics, and follow up examinations using HST observations have determined the currect, best estimates yield a M$_{\rm BH}$/M$_{\rm bulge}$ fraction between about 0.0013 and 0.0023 \citep{Merritt2001a,McLure2001,Marconi2003}. 
 
 Major mergers between massive galaxies are thought to be efficient fueling mechanisms for bright AGN. The large influx of material due to tidal torques from the merger causes bursts of star formation and helps funnel gas directly into the center where the SMBH resides. \citep{Richards2006,Reddy2008,Hopkins2010} Additionally, the most massive, highest-luminosity AGN (i.e. quasars) reside in incredibly luminous infrared galaxies where star formation is abundant, signifying that major mergers may have recently occurred. \citep{Treister2012} Distorted morphologies are often characteristics of quasar hosts, and companions can also be present around quasars, both of which are evidence that strengthen the possibility of a recent merger having affected their lifetimes. 
 
-In many less massive AGN, however, there is a clear lack of distorted morphologies, close neighbors, and/or other obvious merger evidence.  \citep{Ryan2007,Hicks2013} It is also important to note that many of these AGN exist in spiral galaxies, which are unlikely to have been recently disturbed by major mergers. \citep{Schawinski2011,Kocevski2011} Nevertheless, some evidence suggests \citep{Governato2009} that disturbed galaxies may reform a disk quickly, even if their history is characterized by many mergers. More recently, \cite{Treister2012} has suggested that only the highest luminosity AGN require fueling via major mergers, an effect which seems to scale with luminosity rather than redshift. They found that $\sim$90\% of AGN across all redshifts are fueled by various other mechanisms which may include minor mergers, flybys, and smooth accretion, whereby gas is directly accreted via large filaments from the ambient intergalactic medium. Secular processes, including bar formation and disk instabilities, may also be prominent forms of accretion for these SMBHs. \citep[][Possibly cite Graham, which?]{Kormendy2013}   
-
-Smooth accretion of unshocked gas seems a likely candidate for fueling these low mass galaxies. Filaments of unshocked gas may fuel until the galaxy halo reaches a total (virial) mass near 10$^{11} M_{\odot}$; once in more massive halos, the gas will shock heat to the virial temperature of the halo. Nevertheless, filaments of unshocked gas may still penetrate shocked regions allowing unshocked gas to still flow into the galaxy. \citep{Brooks2007,Dekel2009,Keres2005}
+In many less massive and less luminous AGN, however, there is a clear lack of distorted morphologies, close neighbors, and/or other obvious merger evidence.  \citep{Ryan2007,Schawinski2011,Ellison2013,Hicks2013}[Maybe a different Ellison paper?] It is also important to note that many of these AGN exist in spiral galaxies, which are unlikely to have been recently disturbed by major mergers. \citep[Which 1990's Tremaine?]{Springel2005,Kocevski2011} Nevertheless, some evidence suggests \citep{vanGorkom1997,Governato2009} that disturbed galaxies may reform a disk quickly, even after a major merger as long as it is gas-rich. More recently, \cite{Treister2012} has suggested that only the highest luminosity AGN require fueling via major mergers; $\sim$90\% of AGN across all redshifts are fueled by various other mechanisms which may include minor mergers, flybys, and smooth accretion, whereby gas is directly accreted via large filaments from the ambient intergalactic medium \citep{Cox2006,Bellovary2013,Sinha2012}. 
+Smooth accretion, in particular, may play an important role in fueling these low mass galaxies. Halos less than 10$^{11} M_{\odot}$ can accrete filaments of unshocked gas; thereafter, gas will shock heat to the virial temperature of the halo. \citep{Keres2005} Even for massive halos, unshocked gas may still penetrate shocked regions to fuel the galaxy. \citep{Brooks2007,Dekel2009,Nelson2013} Secular processes, including bar formation and disk instabilities, may also be prominent forms of accretion for these SMBHs. \citep{Kormendy2013}   
 
 % For my thesis: The unshocked flow filaments that feed thses galaxies are dependent on the galaxy's mass. Smoothly accreted gas will fuel through unshocked gas filaments until the galaxy halo reaches a a mass near 10$^{11} M_{\odot}$. Once the galaxy's mass is greater than this threshold, the mass will reach the virial radius of the halo and the rapid increase in temperature within the radius causes the gas to shock as its temperature quickly increases.
 	
-It is clear that galaxy hosts grow through variety of channels that depend on mass, environment, and interaction history. Therefore, we would like to understand how these different galaxy evolutionary paths translate into different SMBH fueling mechanisms, and see how they affect the state of fueling gas flowing into the SMBH itself. \cite{Bellovary2013} compared simulations of three high mass, high redshift galaxies and found that while mergers and smooth accretion both efficiently build up galaxies, no particular method was more adept at feeding the SMBH at their centers. Using a similar method as \cite{Bellovary2013}, this work compares the fueling mechanisms between two MW mass galaxies and the accretion affecting each of their SMBHs. 
+It is clear that galaxy hosts grow through variety of channels that depend on mass, environment, and interaction history. Therefore, we want to understand how these different galaxy evolutionary paths translate into different SMBH fueling mechanisms, and see how they affect the fueling gas flowing into the SMBH itself. \cite{Bellovary2013} compared simulations of three high mass, high redshift galaxies and found that while mergers and smooth accretion both efficiently build up galaxies, no particular method was more adept at feeding the SMBH. Using a similar method as \cite{Bellovary2013}, this work compares the SMBH and galaxy fueling mechanisms between two Milky Way (MW) mass galaxies. 
 	
-We analyze two galaxy simulations that appear similar at z = 0 but have very different merger histories. Our ``active'' galaxy, h258, has a history characterized by many major mergers, while our ``quiet'' galaxy, h277, has a quiescent history dominated by unshocked gas accretion and few minor mergers. While these galaxies have many of the same properties as the Milky Way including mass within the virial radius (M$_{\rm vir}$), stellar mass, and circular velocity (v$_{\rm circ}$), without a deeper examination, we may not recognize the varying histories that distinguish them. We will compare the BH fractions and halo fractions between and within the galaxies to look for clues about SMBH preferential feeding within these galaxies and how their histories lead to such similar structure. %Along these lines, we will also discuss the fueling mechanisms which vary between these galaxies of similar mass due to different merger and formation histories. 
-Milky Way-type galaxies host SMBHs on the order of 10$^6$ M, which are likely the most common type of massive black hole, yet little is known about them or how they may grow. By examining the feeding mechanisms of these galaxies, as well as what type of gas feeds their central SMBHs, we will be able to compare the accretion rates between h258 and h277 to determine which accretion methods dominate within the central regions of this class of galaxies.
+We analyze two galaxy simulations that are similar at z = 0 but have very different merger histories. Our ``active'' galaxy, h258, has a history characterized by major mergers, while our ``quiet'' galaxy, h277, has a quiescent history with only minor mergers. Since these galaxies are similar to the MW in virial mass, stellar mass, and circular velocity, without a deeper examination, we may not recognize the varying histories that distinguish them. We will compare the origins of gas entering the SMBH and halo to look for clues about SMBH fueling within these galaxies. %Along these lines, we will also discuss the fueling mechanisms which vary between these galaxies of similar mass due to different merger and formation histories. 
+MW-type galaxies host SMBHs on the order of 10$^6$ M, which are likely the most common type of massive black hole, yet little is known about them or how they may grow \citep{Kormendy2013}.  By examining the assembly of these galaxies, and their SMBH fueling, we compare the accretion rates between h258 and h277 to determine which accretion methods dominate in this class of galaxies.
 
-[Note to self: Do I thoroughly discusses what we think we KNOW about growth/evolution and what is still being DEBATED?]	
+%Note to self: Do I thoroughly discusses what we think we KNOW about growth/evolution and what is still being DEBATED?]	
   
 \section{Simulation Parameters}\label{sec-model}
 
@@ -199,7 +201,7 @@ As h277 and h258 are similar in size and appearance at z=0, these differences in
 [Still need to write; needs results first]
 
 (Assuming high rez finds same preferential accretion?)\\
-$\bullet$ Just as we found in the lower resolution simulation, the high\textit{•} resolution sees a distinct preference for accreting gas that has been gained through the many mergers in its history. \\
+$\bullet$ Just as we found in the lower resolution simulation, the high resolution sees a distinct preference for accreting gas that has been gained through the many mergers in its history. \\
 $\bullet$ (MAYBE. We don't know if this is true yet.)\\
 
 
@@ -207,7 +209,7 @@ $\bullet$ (MAYBE. We don't know if this is true yet.)\\
 
 [Still need to write; Yes still need to write]
 
-The final fraction of ``early'' gas in the galaxy at z=0 is less than four percent for both h258 and h277, a negligible amount.  \\
+The final fraction of ``early'' gas in the galaxy at z=0 is less than four percent for both h258 and h277, a negligible amount.\\
 
 
 \acknowledgments
@@ -249,7 +251,7 @@ Thank you to the Fisk-Vanderbilt Masters-to-PhD Bridge program for their continu
 \begin{figure}
 \centerline{\resizebox{0.55\hsize}{!}{\includegraphics[angle=0]{PIE_h258galgasfrac_noexplode_realcolors}}}
 \centerline{\resizebox{0.55\hsize}{!}{\includegraphics[angle=0]{PIE_h258bhgasfrac_noexplode_realcolors}}}
-\caption[]{Gas fractions of the gas particles accreted in h258 by the main halo (above) and the SMBH (below), distinguished by type. Blue, green, and red distinguish gas gained through unshocked gas, gained through mergers, and gas shocked upon entry, respectively. Yellow indicates gas that existed within the main halo upon formation; this ``early'' gas is negligible (\< 1 \%) within the SMBH.}
+\caption[]{Gas fractions of the gas particles accreted in h258 by the main halo (above) and the SMBH (below), distinguished by type. Blue, green, and red distinguish gas gained through unshocked gas, gained through mergers, and gas shocked upon entry, respectively. Yellow indicates gas that existed within the main halo upon formation; this ``early'' gas is negligible ($<$ 1 $\%$) within the SMBH.}
 \label{h258piefrac} 
 \end{figure}
 
@@ -285,7 +287,7 @@ Thank you to the Fisk-Vanderbilt Masters-to-PhD Bridge program for their continu
 \end{figure}
 
 \begin{figure}
-\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{angmom_cumudist_cumu_512}}}
+\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h277_angmom_cumudist}}}
 \caption[]{ Cumulative distribution of angular momentum of the gas particles accreted onto h277.  Gas particles accreted onto the main halo (solid lines) and central black hole (dashed lines). The green, blue, and red lines indicate clumpy, unshocked, and shocked gas, respectively.}
 \label{h277angmom} 
 \end{figure}
