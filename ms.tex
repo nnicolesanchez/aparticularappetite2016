@@ -83,11 +83,15 @@ Smooth accretion, in particular, may play an important role in fueling these low
 	
 It is clear that galaxy hosts grow through variety of channels that depend on mass, environment, and interaction history. Therefore, we want to understand how these different galaxy evolutionary paths translate into different SMBH fueling mechanisms, and see how they affect the fueling gas flowing into the SMBH itself. \cite{Bellovary2013} compared simulations of three high mass, high redshift galaxies and found that while mergers and smooth accretion both efficiently build up galaxies, no particular method was more adept at feeding the SMBH. Using a similar method as \cite{Bellovary2013}, this work compares the SMBH and galaxy fueling mechanisms between two Milky Way (MW) mass galaxies. 
 	
-We analyze two galaxy simulations that are similar at z = 0 but have very different merger histories. Our ``active'' galaxy, h258, has a history characterized by major mergers, while our ``quiet'' galaxy, h277, has a quiescent history with only minor mergers. Since these galaxies are similar to the MW in virial mass, stellar mass, and circular velocity, without a deeper examination, we may not recognize the varying histories that distinguish them. We will compare the origins of gas entering the SMBH and halo to look for clues about SMBH fueling within these galaxies. %Along these lines, we will also discuss the fueling mechanisms which vary between these galaxies of similar mass due to different merger and formation histories. 
+We analyze two galaxy simulations that are similar at z = 0 but have very different merger histories. Our ``active'' galaxy, h258 \ref{h258face}, has a history characterized by major mergers, while our ``quiet'' galaxy, h277 \ref{h277face}, has a quiescent history with only minor mergers. Since these galaxies are similar to the MW in virial mass, stellar mass, and circular velocity, without a deeper examination, we may not recognize the varying histories that distinguish them. We will compare the origins of gas entering the SMBH and halo to look for clues about SMBH fueling within these galaxies. %Along these lines, we will also discuss the fueling mechanisms which vary between these galaxies of similar mass due to different merger and formation histories. 
 MW-type galaxies host SMBHs on the order of 10$^6$ M, which are likely the most common type of massive black hole, yet little is known about them or how they may grow \citep{Kormendy2013}.  By examining the assembly of these galaxies, and their SMBH fueling, we compare the accretion rates between h258 and h277 to determine which accretion methods dominate in this class of galaxies.
 
 %Note to self: Do I thoroughly discusses what we think we KNOW about growth/evolution and what is still being DEBATED?]	
   
+
+% ##########################################################
+% ##########################################################
+% ########################################################## 
 \section{Simulation Parameters}\label{sec-model}
 
 [NOTE TO SELF: Make/include merger trees. Ask Christina?]
@@ -110,37 +114,33 @@ where $\alpha$ is a constant equal to 1, $\rho$ is the density of the surroundin
  
 \subsection{Low Resolution GASOLINE Simulations}
 
-Our low resolution simulations were first run using the smoothed particle hydrodynamics (SPH) N-body tree code Gasoline \citep[][Stadel 2001, how do I cite a thesis?]{Wadsley2004}, with a force resolution of 320 pc and the gas, dark matter, and star particle masses of 2 $\times$ 10$^5$ M$_{\odot}$, 3 $\times$ 10$^5$ M$_{\odot}$, and 7 $\times$ 10$^4$ M$_{\odot}$, respectively.  [Include starting numbers of gas, DM, and stars?] Both N-body+SPH volume renormalized simulations of h258 and h277 have been previously examined in other publications. \cite{Governato2009} studied the regrowth of the large disk structure in h258 by z=0 when such a recent merger affects the galaxy. 
+Our low resolution simulations were first run using the smoothed particle hydrodynamics (SPH) N-body tree code Gasoline \citep[][Stadel 2001, how do I cite a thesis?]{Wadsley2004}, with a force resolution of 320 pc and the gas, dark matter, and star particle masses of 2 $\times$ 10$^5$ M$_{\odot}$, 3 $\times$ 10$^5$ M$_{\odot}$, and 7 $\times$ 10$^4$ M$_{\odot}$, respectively.  [Include starting numbers of gas, DM, and stars?] Both N-body+SPH volume renormalized simulations of h258 and h277 have been previously examined in other publications. \cite{Governato2009} studied the regrowth of the large disk structure in h258 by z=0 when such a recent merger affects the galaxy. This code includes a force resolution of 260 comoving pc, dark matter (DM) particles with masses of $1.3 \times 10^5 M_{\odot}$, and initial gas particle masses of $9 \times 10^4 M_{\odot}$.  
 
-[NOTE TO SELF: Combine sub sections? This one is too short.]
+[NOTE TO SELF: Combine sub sections? This one is too short?]
 	
 %FOR THESIS ONLY: [Jillian's paper includes a table of simulation properties. Should I create one as well? I feel like yes.] 
 
 \subsection{High Resolution CHANGA Simulations}
 
-We used Charm N-body GrAvity solver, ChaNGa, a high resolution version of the same volume. The results of this paper, both from Gasoline and ChaNGa, utilize the same initial conditions but the latter is simulated at a higher resolution allowing the following new physics to be included: spline force softening lengths of 174 pc, dark matter (DM) particles with masses of $1.3 \times 10^5 M_{\odot}$, and initial gas particle masses of $2.7 \times 10^4 M_{\odot}$. Star particles are created with 30\% of their parent gas particle mass; therefore, a maximum initial mass of 8100 $M_{\odot}$. Each galaxy contains about 5 million DM particles inside the virial radius at z=0 and over 14 million DM, star, and gas particles total.
-	
-% [BULLETS OK FOR THESIS NOT PAPER]	
-	
-The resolution of both force and mass in these simulations is comparable to the ``Eris'' simulation which has one of the highest resolutions for an N-body+SPH cosmological simulation of a Milky Way-mass galaxy so far produced.  At z=9, a uniform UV background is applied to simulate the cosmic reionization energy in a variation of \cite{Haardt2012}.
+We used Charm N-body GrAvity solver, ChaNGa, a high resolution version of the same volume. The results of this paper, both from Gasoline and ChaNGa, utilize the same initial conditions but the latter is simulated at a higher resolution allowing the following new physics to be included: metal line cooling \citep{Christensen2012,Shen2010}, gas-phase and dust grain H_2 formation \citep{Christensen2014}, star formation dependence on H$_2$, and H$_2$ destruction from Lyman-Werner radiation. Other changes include a spline force softening lengths of 174 pc and initial gas particle masses of $2.7 \times 10^4 M_{\odot}$. Star particles are created with 30\% of their parent gas particle mass; therefore, a maximum initial mass of 8100 $M_{\odot}$. Each galaxy contains about 5 million DM particles inside the virial radius at z=0 and over 14 million DM, star, and gas particles total. The resolution of both force and mass in these simulations is comparable to the ``Eris'' simulation which has one of the highest resolutions for an N-body+SPH cosmological simulation of a Milky Way-mass galaxy so far produced.  At z=9, a uniform UV background is applied to simulate the cosmic reionization energy in a variation of \cite{Haardt2012}.
 
-In this paper, we [demonstrate that these high resolution ChaNGa simulations have mirroring results to their low resolution Gasoline simulations. This second wave analysis allows us to feel confident in our results as we describe the varying accretion preferences for these simulated Milky Way-mass galaxies, h258 and h277.]
+In this paper, we demonstrate that the results from this high resolution ChaNGa simulation has results which confirm those found by the low resolution Gasoline version of the same galaxy simulation. This secondary analysis allows us to feel confident in our results as we describe the varying origins of fueling gas accreting onto the simulated Milky Way-mass galaxy, h258.
 	
 %[Talk to Glenna about Ritchie Thomas forces]
-	
 
+% ##########################################################
+% ##########################################################	
+% ##########################################################
 \section{Reduction Method}\label{redux}
 
 	
-The Amiga Halo Finder identifies all of the galaxies in the simulations by identifying the virial radii of the halos based on an overdensity using the criterion for a flat universe. [REF] We select the primary halo by determining the most massive galaxy at z=0 and locating the central SMBH. 
+The Amiga Halo Finder identifies all of the halos in the simulations by identifying the virial radii of the halos based on an overdensity using the criterion for a flat universe. \citep{Knebe2001,Knollmann2009,} We select the primary halo by determining the most massive galaxy at z=0 and locating the central SMBH. For our Gasoline simulations, the primary halo in h258 had a final mass of [get mass], 
 
-In this analysis, we use the method utilized in \cite{Brooks2009} to trace gas particles from their origin, through their journey into the galaxy, and determine their position within the SMBH or its host. \cite{Brooks2009} studied the accretion of gas by galaxies in cosmological simulations with a focus on gaseous and stellar buildup of their disks. We use this method to trace the gas particles from their initial location to their moment of halo entry and, for some of the particles, into the SMBH. Utilizing this specific method allows us to determine the state of the gas as it enters the galaxy, by determining the method by which it enters the primary galaxy. By determining the method of entry, we can better track the origins of the gas fueling the SMBH resevoir. 
-	
-[Kelly question: If the fingerprint of the fuel inflow is unique, can the angular momentum of the gas infer spin?]
-	
-We then trace the SMBH back through time, determining its host halo in each snapshot. Gas particles that are part of merger events are traced back through every merger they've encountered--within their merger trees--to determine their origin and which other halos each gas particles previously inhabited.
+EDIT: Include specs: mass, formation z, N (for primary halos? Ask Kelly what she means.)
 
-As we discussed in the introduction, there are a variety of fueling mechanisms thought to grow SMBH. Gas particles are initially traced prior to their accretion onto the main halo to determine whether they occupied a different halo at their formation. The particles are then classified by their method of entrance into the primary halo. If the gas particles existed in the primary halo at the first time step (z=4 in this study), they are classified as ``early'' gas. Gas that belonged to a different halo than the primary prior to accretion is classified as ``clumpy'' and enters the primary halo through mergers. All other gas is classified as entering the halo via ``smooth'' accretion, and is then subdivided into two categories: ``cold'' and ``shocked.'' In the cases where a shock does not develop, unshocked gas will usually flow into the halo via large-scale, dark matter filaments. (Bellovary 2013) It's possible for the filaments to also be dense enough to pierce an already developed shock allowing for unshocked gas to funnel into the galaxy core where it can accrete onto the SMBH without being heated to the virial temperature.
+In this analysis, we trace gas particles from their origin through their journey into the galaxy and SMBH to determine their position within the SMBH or its host \citep{Brooks2009} . We then trace the SMBH back through time, determining its host halo in each snapshot. As we discussed in the introduction, there are a variety of fueling mechanisms thought to grow SMBH. Gas particles are initially traced prior to their accretion onto the main halo to determine whether they occupied a different halo at their formation. The particles are then classified by their method of entrance into the primary halo. If the gas particles existed in the primary halo at the first time step, they are classified as ``early'' gas. Gas that belonged to a different halo than the primary prior to accretion is classified as ``clumpy'' and enters the primary halo through mergers. All other gas is classified as entering the halo via ``smooth'' accretion, and is then subdivided into two categories: ``cold'' and ``shocked.'' In the cases where a shock does not develop, unshocked gas will usually flow into the halo via large-scale, dark matter filaments. (Bellovary 2013) It's possible for the filaments to also be dense enough to pierce an already developed shock allowing for unshocked gas to funnel into the galaxy core where it can accrete onto the SMBH without being heated to the virial temperature.
+	
+%[Kelly question: If the fingerprint of the fuel inflow is unique, can the angular momentum of the gas infer spin? Answer: no, can't infer spin from angmom of gas at 100 pc res.]
 
 As previously described, if the galaxy halo is around or greater than 10$^{11}$ M$_{\odot} $, the gas will shock. We determine shocked particles through an increase in entropy and temperature using the following criteria:
 \begin{equation}
@@ -160,9 +160,9 @@ where $\rho_0$ is the gas density prior to experiencing the shock. The galaxies 
 
 Once all the gas particles have been individually categorized, we can use these labels to determine the methods of accretion onto these Milky Way-size galaxies. With the information about which particles are accreting onto the SMBH (from the gas reservoir of particles that have been accreted by the galaxy), we can better compare the methods feeding both the galaxy and its SMBH. We can then determine whether there exists a method more efficiently building up these kinds of galaxies and their SMBH.
 
-%
-%
-%
+% ##########################################################
+% ##########################################################
+% ##########################################################
 \section{Results} \label{results}
 
 From the initial analysis of the low resolution Gasoline simulations, we have determined that the merger histories of these two galaxies has a pronounced effect on the resulting accretion of gas into the SMBH and its host. 
@@ -179,7 +179,6 @@ Figure \ref{h258piefrac} depicts the fractions of total gas in the galaxy (a) an
 We examine the angular momentum of the gas at the moment it enters the galaxy for clues to the understand the ready accretion of merger accreted gas. (Figure \ref{h258angmom}) A cumulative distribution of the angular momentum of entering gas, differentiated based on method of entrance into the galaxy, shows that gas entering the SMBH (dashed lines) has an overall lower angular momentum than gas entering galaxy (solid lines). This is true whether the gas enters via unshocked smooth accretion, becomes shocked upon entry, or enters through a galaxy merger (blue, red, green, respectively).
 
  By examining the angular momentum of the gas accreted onto the SMBH at the moment it enters the halo, we were able to determine that a significant preference exists for gas with lower angular momentum to enter the SMBH. In contrast, \cite{Bellovary2013} found a \textit{slight} preference for gas of a lower angular momentum to enter the SMBH. From our results we determine that the gas attained through mergers tends to enter the halo with a lower angular momentum which may explain the SMBH's preference for merger gas. 
-
 
 \subsection{Low Resolution h277: Resolution Test}
 	
@@ -233,15 +232,21 @@ Thank you to the Fisk-Vanderbilt Masters-to-PhD Bridge program for their continu
 \end{figure}
 
 \begin{figure}
-\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h258numfraction_brightgreen}}}
-\caption[]{Gas fraction across redshift for galaxy (solid lines) and central BH (dashed lines). Green lines signify gas fractions accreted via mergers and blue lines designate gas accreted via unshocked gas filaments.}
-\label{h258numfrac} 
+\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h277_faceon}}}
+\caption[]{Face-on and edge-on Sunrise images of our GASOLINE galaxy, h277, which has a quiescent, merger-quiet history.}
+\label{h277face} 
 \end{figure}
 
 \begin{figure}
 \centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h258_allmassgas_final}}}
 \caption[]{The central BH’s cumulative mass as a function of time and redshift. The black dashed line indicates the total cumulative BH mass. The black solid line indicates the total gas mass. The blue dot-dashed line indicates the gas mass accreted via unshocked gas. The green solid line indicates the gas mass accreted through mergers. The red dashed line indicates gas mass that was shocked upon entry into the halo.}
 \label{h258allmassgas} 
+\end{figure}
+
+\begin{figure}
+\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h258numfraction_brightgreen}}}
+\caption[]{Gas fraction across redshift for galaxy (solid lines) and central BH (dashed lines). Green lines signify gas fractions accreted via mergers and blue lines designate gas accreted via unshocked gas filaments.}
+\label{h258numfrac} 
 \end{figure}
 
 \begin{figure}
@@ -258,21 +263,15 @@ Thank you to the Fisk-Vanderbilt Masters-to-PhD Bridge program for their continu
 \end{figure}
 
 \begin{figure}
-\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h277_faceon}}}
-\caption[]{Face-on and edge-on Sunrise images of our GASOLINE galaxy, h277, which has a quiescent, merger-quiet history.}
-\label{h277face} 
+\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h277_allmassgas_final}}}
+\caption[]{The central BH’s cumulative mass as a function of time and redshift. The black dashed line indicates the total cumulative BH mass. The black solid line indicates the total gas mass. The blue dot-dashed line indicates the gas mass accreted via unshocked gas. The green solid line indicates the gas mass accreted through mergers. The red dashed line indicates gas mass that was shocked upon entry into the halo.}
+\label{h277allmassgas} 
 \end{figure}
 
 \begin{figure}
 \centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h277numfraction_brightgreen}}}
 \caption[]{Gas fraction across redshift for galaxy (solid lines) and central BH (dashed lines). Green lines signify gas fractions accreted via mergers and blue lines designate gas accreted via unshocked gas filaments.}
 \label{h277numfrac} 
-\end{figure}
-
-\begin{figure}
-\centerline{\resizebox{0.75\hsize}{!}{\includegraphics[angle=0]{h277_allmassgas_final}}}
-\caption[]{The central BH’s cumulative mass as a function of time and redshift. The black dashed line indicates the total cumulative BH mass. The black solid line indicates the total gas mass. The blue dot-dashed line indicates the gas mass accreted via unshocked gas. The green solid line indicates the gas mass accreted through mergers. The red dashed line indicates gas mass that was shocked upon entry into the halo.}
-\label{h277allmassgas} 
 \end{figure}
 
 \begin{figure}
